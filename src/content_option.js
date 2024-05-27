@@ -5,6 +5,7 @@ import project3 from "./pages/portfolio/projects/project-3.png";
 import project4 from "./pages/portfolio/projects/project-4.png";
 import project5 from "./pages/portfolio/projects/project-5.png";
 import project6 from "./pages/portfolio/projects/project-6.png";
+import project7 from "./pages/portfolio/projects/project-7.png";
 
 const logotext = "smoook92";
 const meta = {
@@ -117,6 +118,11 @@ const dataportfolio = [{
         img: project6,
         description: "Система управления студентами",
         link: "https://github.com/smoook92/studentmanagement-app",
+    },
+                       {
+        img: project7,
+        description: "Разработка электронного каталога продукции и услуг",
+        link: "https://github.com/smoook92/electronic-catalog",
     },
 ];
 

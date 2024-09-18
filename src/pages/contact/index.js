@@ -6,9 +6,6 @@ import { meta } from "../../content_option";
 import { Container, Row, Col, Alert } from "react-bootstrap";
 import { contactConfig } from "../../content_option";
 
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faFacebook, faTwitter, faLinkedin } from '@fortawesome/free-brands-svg-icons';
-
 export const ContactUs = () => {
   const [formData, setFormdata] = useState({
     email: "",
@@ -105,15 +102,6 @@ export const ContactUs = () => {
               <br />
             </address>
             <p>{contactConfig.description}</p>
-            <div className="social-icons">
-              <a href="https://www.instagram.com/smoook92/" target="_blank" rel="noopener noreferrer">
-                <FontAwesomeIcon icon={faInstagram} size="2x" />
-              </a>
-              <a href="https://t.me/smoook92/" target="_blank" rel="noopener noreferrer">
-                <FontAwesomeIcon icon={faTelegram} size="2x" />
-              </a>
-            </div>
-
           </Col>
         </Row>
       </Container>

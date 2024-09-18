@@ -106,6 +106,8 @@ export const ContactUs = () => {
             </address>
             <p>{contactConfig.description}</p>
             <strong>Напишите мне</strong>
+            <br />
+            <br/>
             <a href="https://www.instagram.com/smoook92/" target="_blank" rel="noopener noreferrer">
               <FontAwesomeIcon icon={faInstagram} size="2x" />
             </a>

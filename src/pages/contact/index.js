@@ -7,7 +7,7 @@ import { Container, Row, Col, Alert } from "react-bootstrap";
 import { contactConfig } from "../../content_option";
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faFacebook, faTwitter, faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import { faInstagram, faTelegram } from '@fortawesome/free-brands-svg-icons';
 
 export const ContactUs = () => {
   const [formData, setFormdata] = useState({

@@ -2,6 +2,23 @@
   margin-bottom: calc(3rem + 5.128vw);
 }
 
+.table {
+  border: 1px solid #ddd; /* Граница вокруг таблицы */
+  background-color: transparent; /* Прозрачный фон */
+  border-collapse: collapse; /* Убирает двойные линии между ячейками */
+}
+
+.table th,
+.table td {
+  background-color: transparent; /* Прозрачный фон ячеек */
+  border: 1px solid #ddd; /* Светло-серые границы для ячеек */
+}
+
+/* Устанавливаем границу для строк таблицы */
+.table tr {
+  border-bottom: 1px solid #ddd;
+}
+
 .table td,
 .table th {
   color: var(--text-color);

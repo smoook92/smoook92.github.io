@@ -36,7 +36,6 @@ button.btn.ac_btn:hover {
 }
 
 .social-icons a {
-  color: #ffffff; /* Цвет иконок */
   transition: color 0.3s ease;
 }
 

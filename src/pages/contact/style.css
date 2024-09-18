@@ -29,6 +29,21 @@ button.btn.ac_btn:hover {
   animation-delay: 0.3s;
 }
 
+.social-icons {
+  display: flex;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.social-icons a {
+  color: #000; /* Цвет иконок */
+  transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #007bff; /* Цвет при наведении */
+}
+
 @keyframes shift-rightwards {
   0% {
     transform: translateX(-100%);

@@ -111,7 +111,6 @@ export const ContactUs = () => {
             <a href="https://www.instagram.com/smoook92/" target="_blank" rel="noopener noreferrer">
               <FontAwesomeIcon icon={faInstagram} size="2x" />
             </a>
-            <div className="ml-5"></div>
             <a href="https://t.me/smoook92/" target="_blank" rel="noopener noreferrer">
               <FontAwesomeIcon icon={faTelegram} size="2x" />
             </a>

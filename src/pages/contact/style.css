@@ -33,6 +33,7 @@ button.btn.ac_btn:hover {
   display: flex;
   gap: 15px;
   margin-top: 10px;
+  margin-left: 5px;
 }
 
 .social-icons a {
@@ -43,11 +44,6 @@ button.btn.ac_btn:hover {
 .social-icons a:hover {
   color: #007bff; /* Цвет при наведении */
 }
-
-.ml-5{
-  margin-left: 5px;
-}
-
 @keyframes shift-rightwards {
   0% {
     transform: translateX(-100%);

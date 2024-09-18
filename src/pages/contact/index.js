@@ -105,14 +105,12 @@ export const ContactUs = () => {
               <br />
             </address>
             <p>{contactConfig.description}</p>
-            <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
-              <FontAwesomeIcon icon={faFacebook} size="2x" />
+            <strong>Напишите мне</strong>
+            <a href="https://www.instagram.com/smoook92/" target="_blank" rel="noopener noreferrer">
+              <FontAwesomeIcon icon={faInstagram} size="2x" />
             </a>
-            <a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer">
-              <FontAwesomeIcon icon={faTwitter} size="2x" />
-            </a>
-            <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">
-              <FontAwesomeIcon icon={faLinkedin} size="2x" />
+            <a href="https://t.me/smoook92/" target="_blank" rel="noopener noreferrer">
+              <FontAwesomeIcon icon={faTelegram} size="2x" />
             </a>
           </Col>
         </Row>

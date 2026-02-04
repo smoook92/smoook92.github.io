@@ -1,174 +1,347 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="ru" prefix="og: https://ogp.me/ns#">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Сорин Михайлов | Программист, Web-Разработчик</title>
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="stylesheet" href="style.css">
-
-    <!-- SEO Meta Tags -->
-    <meta name="title" content="Сорин Михайлов | Программист, Web-Разработчик">
-    <meta name="description" content="Персональный сайт-портфолио: проекты на PHP, Telegram-боты, веб-приложения и IT-разработка. Контакты, резюме, донаты и примеры работ.">
-    <meta name="keywords" content="портфолио разработчика, PHP, веб-разработка, GitHub, Telegram bot, проекты, web developer, frontend backend, вакансии разработчика">
+    
+    <!-- SEO оптимизация -->
+    <title>Сорин Михайлов - Frontend-разработчик на PHP | Портфолио 2024</title>
+    <meta name="description" content="Сорин Михайлов - Frontend-разработчик с архитектурным мышлением. Специализация: PHP 8.1+, JavaScript, PostgreSQL. Создаю адаптивные интерфейсы и продуманные backend-решения.">
+    <meta name="keywords" content="Сорин Михайлов, frontend разработчик, PHP разработчик, JavaScript, PostgreSQL, адаптивная верстка, архитектура, чистый код">
     <meta name="author" content="Сорин Михайлов">
-
-    <!-- Open Graph (для соцсетей) -->
-    <meta property="og:title" content="Сорин Михайлов | Программист, Web-Разработчик">
-    <meta property="og:description" content="Мои проекты, контакты и опыт в веб-разработке.">
-    <meta property="og:image" content="avatar.jpg">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Сорин Михайлов - Frontend-разработчик на PHP">
+    <meta property="og:description" content="Портфолио разработчика с архитектурным мышлением">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://smoook92.github.io">
-
-    <!-- Twitter -->
+    <meta property="og:image" content="https://smoook92.github.io/images/og-image.jpg">
+    <meta property="og:locale" content="ru_RU">
+    <meta property="og:site_name" content="Портфолио Сорина Михайлова">
+    
+    <!-- Twitter Cards -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Сорин Михайлов | Программист, Web-Разработчик">
-    <meta name="twitter:description" content="Проекты, ссылки, контакты разработчика.">
-    <meta name="twitter:image" content="avatar.jpg">
-
-    <!-- Для Google -->
-    <meta name="robots" content="index, follow">
-    <meta name="googlebot" content="index, follow">
-
-    <!-- Canonical -->
-    <link rel="canonical" href="https://smoook92.github.io/">
-
+    <meta name="twitter:title" content="Сорин Михайлов - Frontend-разработчик">
+    <meta name="twitter:description" content="Создаю адаптивные интерфейсы и продуманные backend-решения">
+    
+    <!-- Структурированные данные -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Сорин Михайлов",
+        "url": "https://smoook92.github.io",
+        "image": "https://smoook92.github.io/images/profile.jpg",
+        "jobTitle": "Frontend-разработчик на PHP",
+        "description": "Frontend-разработчик с фокусом на архитектуру и чистый код",
+        "email": "mailto:smoook92@gmail.com",
+        "sameAs": [
+            "https://github.com/smoook92",
+            "https://smoook92.github.io"
+        ],
+        "knowsAbout": ["PHP", "JavaScript", "PostgreSQL", "HTML", "CSS", "Web Development"],
+        "knowsLanguage": "Русский"
+    }
+    </script>
+    
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="css/anim.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Яндекс.Метрика (код добавим позже) -->
+    <!-- <script type="text/javascript" >(function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})(window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");ym(XXXXXX, "init", {clickmap:true,trackLinks:true,accurateTrackBounce:true});</script> -->
+    
+    <!-- Google Analytics (код добавим позже) -->
+    <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script> -->
 </head>
 <body>
-    <video id="background-video" loop playsinline>
-        <source src="video.mp4" type="video/mp4">
-    </video>
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="#hero" class="logo">Сорин<span class="dot">.</span></a>
+            <button class="menu-toggle" id="menuToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#about" class="nav-link">Обо мне</a></li>
+                <li><a href="#skills" class="nav-link">Навыки</a></li>
+                <li><a href="#projects" class="nav-link">Проекты</a></li>
+                <li><a href="#contact" class="nav-link">Контакты</a></li>
+            </ul>
+        </div>
+    </nav>
 
-    <div id="preloader" class="preloader"></div>
+    <section id="hero" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title animate-fade-up">
+                        Привет, я <span class="highlight">Сорин Михайлов</span>
+                    </h1>
+                    <h2 class="hero-subtitle animate-fade-up" data-delay="0.1">
+                        Frontend-разработчик на PHP
+                    </h2>
+                    <p class="hero-description animate-fade-up" data-delay="0.2">
+                        Создаю адаптивные интерфейсы и продуманные backend-решения.<br>
+                        Люблю пошаговые планы и архитектурный подход.
+                    </p>
+                    <div class="hero-buttons animate-fade-up" data-delay="0.3">
+                        <a href="#projects" class="btn btn-primary">Мои проекты</a>
+                        <a href="#contact" class="btn btn-outline">Связаться</a>
+                    </div>
+                </div>
+                <div class="hero-image animate-fade-up" data-delay="0.2">
+                    <img src="images/avatar.png" alt="Фотография Сорина Михайлова" class="profile-photo" loading="lazy">
+                </div>
+            </div>
+            <div class="hero-scroll">
+                <a href="#about" class="scroll-hint">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M12 5v14M5 12l7 7 7-7"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </section>
 
-    <div id="root" class="hidden">
-        <main id="home-view" class="view active">
-            <div class="avatar-wrapper">
-                <img src="avatar.jpg" alt="Avatar" class="avatar" id="main-avatar">
+    <section id="about" class="section">
+        <div class="container">
+            <h2 class="section-title">Обо <span class="highlight">мне</span></h2>
+            <div class="about-grid">
+                <div class="about-card">
+                    <div class="about-icon">💻</div>
+                    <h3>Frontend с бэкенд-мышлением</h3>
+                    <p>Создаю интерфейсы, понимая всю цепочку: от БД до UI. Умею не только верстать, но и проектировать архитектуру.</p>
+                </div>
+                <div class="about-card">
+                    <div class="about-icon">🧠</div>
+                    <h3>Архитектурный подход</h3>
+                    <p>"Как правильно?" — мой любимый вопрос. Продумываю решения на несколько шагов вперед.</p>
+                </div>
+                <div class="about-card">
+                    <div class="about-icon">🎯</div>
+                    <h3>Ориентация на результат</h3>
+                    <p>Ценю практическую пользу. Мой код должен решать задачи бизнеса, а не просто работать.</p>
+                </div>
             </div>
-            <div class="info">
-                <h1>Привет! Меня зовут <span class="highlight">Сорин Михайлов</span></h1>
-                <p id="age">Тут типо заебись и сайт сделал вайб</p>
-                <h1 class="rotate-text">
-                    Я <span class="words">
-                        <span>разрабатываю сайты с нуля</span>
-                        <span>кодирую классные сайты</span>
-                        <span>фрилансер-программист</span>
-                    </span>
-                </h1>
-            </div>
-            <div class="links">
-                <div id="projects-btn" class="link-card"><div class="card-icon"><i class='bx bx-code-block'></i></div><div class="card-text"><h3>Проекты</h3><p>Мои текущие и завершенные работы.</p></div></div>
-                <div id="contacts-btn" class="link-card"><div class="card-icon"><i class='bx bx-user-voice'></i></div><div class="card-text"><h3>Контакты</h3><p>Все актуальные способы связи со мной.</p></div></div>
-                <div id="donations-btn" class="link-card"><div class="card-icon"><i class='bx bx-wallet'></i></div><div class="card-text"><h3>Донаты</h3><p>Поддержать меня и мое творчество.</p></div></div>
-            </div>
-        </main>
+        </div>
+    </section>
 
-        <div id="projects-view" class="view">
-            <div class="page-container">
-                <div class="back-link"><i class='bx bx-arrow-back'></i> Вернуться назад</div>
-                <div class="content-wrapper">
-                    <div class="file-header"><i class='bx bxs-file-json'></i> projects.json</div>
-                    <div class="projects-grid">
-                        <a href="https://github.com/smoook92/web/tree/smoook92" target="_blank" class="project-card-link">
-                            <div class="project-card-v2">
-                                <div class="p-card-header">
-                                    <div class="p-card-title"><h3>Система блога на чистом PHP</h3></div>
-                                </div>
-                                <p class="p-card-description">Блог на чистом PHP. Данный блог был разработан для дипломного проекта</p>
-                            </div>
+    <section id="skills" class="section bg-alt">
+        <div class="container">
+            <h2 class="section-title">Мой <span class="highlight">стек</span></h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3><span class="skill-icon">🔧</span> Backend</h3>
+                    <ul class="skill-list">
+                        <li>PHP 8.1+</li>
+                        <li>PostgreSQL</li>
+                        <li>MySQL</li>
+                        <li>REST API</li>
+                        <li>Архитектура MVC</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3><span class="skill-icon">🎨</span> Frontend</h3>
+                    <ul class="skill-list">
+                        <li>JavaScript (ES6+)</li>
+                        <li>HTML5 / CSS3</li>
+                        <li>Адаптивная верстка</li>
+                        <li>Bootstrap / Tailwind</li>
+                        <li>Figma → Код</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3><span class="skill-icon">🚀</span> Инструменты</h3>
+                    <ul class="skill-list">
+                        <li>Git / GitHub</li>
+                        <li>Docker</li>
+                        <li>Composer</li>
+                        <li>VS Code</li>
+                        <li>Linux</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="section">
+        <div class="container">
+            <h2 class="section-title">Мои <span class="highlight">проекты</span></h2>
+            
+            <!-- Фильтры проектов -->
+            <div class="project-filters" id="projectFilters">
+                <button class="filter-btn active" data-filter="all">Все проекты</button>
+                <button class="filter-btn" data-filter="php">PHP</button>
+                <button class="filter-btn" data-filter="fullstack">Full-Stack</button>
+                <button class="filter-btn" data-filter="frontend">Frontend</button>
+            </div>
+            
+            <div class="projects-grid">
+                <!-- Проект VK-2006 -->
+                <article class="project-card" data-category="fullstack php">
+                    <div class="project-header">
+                        <h3>VK-2006 — Ностальгическая соцсеть</h3>
+                        <span class="project-badge">Full-Stack</span>
+                    </div>
+                    <p class="project-description">
+                        Полноценная социальная сеть в стиле 2006 года на чистом PHP 8.3+ и PostgreSQL.
+                        Собственная архитектура MVC, JWT-аутентификация, система друзей и сообщений.
+                    </p>
+                    <div class="project-tech">
+                        <span>PHP 8.3</span>
+                        <span>PostgreSQL</span>
+                        <span>JavaScript</span>
+                        <span>JWT</span>
+                        <span>MVC</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/smoook92/vk2006" target="_blank" class="project-link">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
+                            </svg>
+                            Код на GitHub
                         </a>
-                        <a href="https://github.com/smoook92/Blog" target="_blank" class="project-card-link">
-                            <div class="project-card-v2">
-                                <div class="p-card-header"><div class="p-card-title"><h3>Блог 2.0 на чистом PHP </h3></div></div>
-                                <p class="p-card-description">Блог на чистом PHP. Данный блог был разработан для дипломного проекта</p>
-                            </div>
+                    </div>
+                </article>
+                
+                <!-- Остальные проекты (аналогично VK-2006) -->
+                <!-- Student Management App -->
+                <article class="project-card" data-category="php">
+                    <div class="project-header">
+                        <h3>Система управления студентами</h3>
+                        <span class="project-badge">PHP/MySQL</span>
+                    </div>
+                    <p class="project-description">Веб-приложение для управления образовательным процессом...</p>
+                    <div class="project-tech">
+                        <span>PHP</span><span>MySQL</span><span>Bootstrap</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/smoook92/studentmanagement-app" target="_blank" class="project-link">Код на GitHub</a>
+                    </div>
+                </article>
+                
+                <!-- Job Portal -->
+                <article class="project-card" data-category="php">
+                    <div class="project-header">
+                        <h3>Портал вакансий</h3>
+                        <span class="project-badge">PHP/MySQL</span>
+                    </div>
+                    <p class="project-description">Платформа для поиска работы и размещения вакансий...</p>
+                    <div class="project-tech">
+                        <span>PHP</span><span>MySQL</span><span>AJAX</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/smoook92/job-portal" target="_blank" class="project-link">Код на GitHub</a>
+                    </div>
+                </article>
+                
+                <!-- Electronic Catalog -->
+                <article class="project-card" data-category="frontend">
+                    <div class="project-header">
+                        <h3>Электронный каталог</h3>
+                        <span class="project-badge">Frontend</span>
+                    </div>
+                    <p class="project-description">Интернет-каталог товаров с системой категорий...</p>
+                    <div class="project-tech">
+                        <span>HTML5</span><span>CSS3</span><span>JavaScript</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/smoook92/electronic-catalog" target="_blank" class="project-link">Код на GitHub</a>
+                    </div>
+                </article>
+                
+                <!-- Blog Platform -->
+                <article class="project-card" data-category="php">
+                    <div class="project-header">
+                        <h3>Блог-платформа</h3>
+                        <span class="project-badge">PHP/MySQL</span>
+                    </div>
+                    <p class="project-description">Многофункциональная блог-платформа...</p>
+                    <div class="project-tech">
+                        <span>PHP</span><span>MySQL</span><span>Bootstrap</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/smoook92/Blog" target="_blank" class="project-link">Код на GitHub</a>
+                    </div>
+                </article>
+                
+                <!-- To-Do List -->
+                <article class="project-card" data-category="php">
+                    <div class="project-header">
+                        <h3>To-Do List</h3>
+                        <span class="project-badge">PHP/MySQL</span>
+                    </div>
+                    <p class="project-description">Приложение для управления задачами...</p>
+                    <div class="project-tech">
+                        <span>PHP</span><span>MySQL</span><span>JavaScript</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/smoook92/To-DoList" target="_blank" class="project-link">Код на GitHub</a>
+                    </div>
+                </article>
+                
+                <!-- Web Projects -->
+                <article class="project-card" data-category="frontend">
+                    <div class="project-header">
+                        <h3>Веб-проекты</h3>
+                        <span class="project-badge">Frontend</span>
+                    </div>
+                    <p class="project-description">Коллекция различных веб-проектов и экспериментов...</p>
+                    <div class="project-tech">
+                        <span>HTML5</span><span>CSS3/SCSS</span><span>JavaScript</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/smoook92/web/tree/smoook92" target="_blank" class="project-link">Код на GitHub</a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section bg-alt">
+        <div class="container">
+            <h2 class="section-title">Давайте <span class="highlight">сотрудничать</span></h2>
+            <div class="contact-wrapper">
+                <div class="contact-info">
+                    <p class="contact-text">
+                        Открыт для интересных проектов, где нужен вдумчивый подход к архитектуре и качеству кода.
+                    </p>
+                    <div class="contact-methods">
+                        <a href="mailto:smoook92@gmail.com" class="contact-link">
+                            <svg width="20" height="20"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/></svg>
+                            smoook92@gmail.com
                         </a>
-                        <a href="https://github.com/smoook92/To-DoList" target="_blank" class="project-card-link">
-                            <div class="project-card-v2">
-                                <div class="p-card-header"><div class="p-card-title"><h3>To-Do List на PHP с базой данных</h3></div></div>
-                                <p class="p-card-description">Обычное Web-приложение заметки</p>
-                            </div>
-                        </a>
-                        <a href="https://github.com/smoook92/studentmanagement-app" target="_blank" class="project-card-link">
-                            <div class="project-card-v2">
-                                <div class="p-card-header"><div class="p-card-title"><h3>Система управления студентами</h3></div></div>
-                                <p class="p-card-description">Laravel-система для полного управления обучением</p>
-                            </div>
-                        </a>
-                        <a href="https://github.com/smoook92/electronic-catalog" target="_blank" class="project-card-link">
-                            <div class="project-card-v2">
-                                <div class="p-card-header"><div class="p-card-title"><h3>Каталог товаров и услуг</h3></div></div>
-                                <p class="p-card-description">Проект с фриланса: сайт на PHP для электронного каталога товаров и услуг</p>
-                            </div>
-                        </a>
-                        <a href="https://github.com/smoook92/job-portal" target="_blank" class="project-card-link">
-                            <div class="project-card-v2">
-                                <div class="p-card-header"><div class="p-card-title"><h3>Веб-приложение для портала вакансий</h3></div></div>
-                                <p class="p-card-description">Адаптивное веб-приложение для поиска работы на PHP, MySQL и Bootstrap 5</p>
-                            </div>
+                        <a href="https://github.com/smoook92" target="_blank" class="contact-link">
+                            <svg width="20" height="20"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                            GitHub профиль
                         </a>
                     </div>
                 </div>
-                <footer class="copyright">Copyright © 2025 вайб. Все права защищены.</footer>
             </div>
         </div>
-        
-        <div id="contacts-view" class="view">
-             <div class="page-container">
-                <div class="back-link"><i class='bx bx-arrow-back'></i> Вернуться назад</div>
-                 <div class="content-wrapper">
-                    <div class="file-header"><i class='bx bxs-contact'></i> contacts.json</div>
-                     <div class="projects-grid">
-                        <a href="https://t.me/nek_k_kto" class="project-card-v2 link">
-                            <div class="p-card-header"><div class="p-card-title"><i class='bx bxl-telegram p-card-icon'></i><h3>Telegram</h3></div></div>
-                            <p class="p-card-description">Лучший способ связи со мной</p>
-                        </a>
-                        <a href="https://github.com/smoook92" class="project-card-v2 link">
-                            <div class="p-card-header"><div class="p-card-title"><i class='bx bxl-github p-card-icon'></i><h3>Гитхаб</h3></div></div>
-                            <p class="p-card-description">Мой гитхаб, там все проекты</p>
-                        </a>
-                        <a href="https://www.instagram.com/nek__kto/" class="project-card-v2 link">
-                            <div class="p-card-header"><div class="p-card-title"><i class='bx bxl-instagram p-card-icon'></i><h3>Instagram</h3></div></div>
-                            <p class="p-card-description">Мой гитхаб, там все проекты</p>
-                        </a>
-                        <a href="https://www.youtube.com/@CMD_IT" class="project-card-v2 link">
-                            <div class="p-card-header"><div class="p-card-title"><i class='bx bxl-youtube p-card-icon'></i><h3>Youtube</h3></div></div>
-                            <p class="p-card-description">Мой гитхаб, там все проекты</p>
-                        </a>
-                     </div>
-                 </div>
-            </div>
-        </div>
-    
-        <div id="donations-view" class="view">
-             <div class="page-container">
-                <div class="back-link"><i class='bx bx-arrow-back'></i> Вернуться назад</div>
-                 <div class="content-wrapper">
-                    <div class="file-header"><i class='bx bxs-dollar-circle'></i> donations.json</div>
-                    <div class="projects-grid">
-                        <div class="project-card-v2">
-                            <div class="p-card-header"><div class="p-card-title"><h3>USDT</h3></div></div>
-                            <p class="p-card-description address">UQCz6xufxysUyx2Tw2kDV6oKdX8PmCXLeoVf3ArYc3BIljFc</p>
-                        </div>
-                    </div>
-                    <div class="projects-grid">
-                        <div class="project-card-v2">
-                            <div class="p-card-header"><div class="p-card-title"><h3>ETH</h3></div></div>
-                            <p class="p-card-description address">0x59009ef52E72dC83378b8Cf2f13e253BfB40523E</p>
-                        </div>
-                    </div>
-                    <div class="projects-grid">
-                        <div class="project-card-v2">
-                            <div class="p-card-header"><div class="p-card-title"><h3>BTC</h3></div></div>
-                            <p class="p-card-description address">bc1qmgzr3ry8gd04mg3y67sq2sh37m7q6qu7gj7ufm</p>
-                        </div>
-                    </div>
-                 </div>
-            </div>
-        </div>
-    </div>
-    <script src="script.js"></script>
-</body>
+    </section>
 
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">Сорин Михайлов<span class="dot">.</span></div>
+                <nav class="footer-nav">
+                    <a href="#hero" class="footer-link">Наверх</a>
+                    <a href="#about" class="footer-link">Обо мне</a>
+                    <a href="#projects" class="footer-link">Проекты</a>
+                    <a href="#contact" class="footer-link">Контакты</a>
+                </nav>
+                <p class="footer-copyright">
+                    &copy; 2024 Сорин Михайлов. Все права защищены.<br>
+                    <small>Сайт-портфолио frontend-разработчика</small>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
 </html>

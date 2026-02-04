@@ -29,20 +29,6 @@
 
 ---
 
-## 📂 Структура проекта
-
-/
-├── index.html
-├── style.css
-├── script.js
-├── avatar.jpg
-├── video.mp4
-├── favicon.ico (после добавления)
-├── robots.txt
-└── sitemap.xml
-
----
-
 ## 🎯 Функциональность
 
 - Личный профиль и краткая информация  
